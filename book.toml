@@ -5,3 +5,7 @@ language = "en"
 
 [output.html]
 cname = "dsa.harshitbhat.com"
+mathjax-support = true
+
+[output.html.playground]
+editable = true
