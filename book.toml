@@ -2,3 +2,6 @@
 title = "Data Structures and Algorithms in Rust"
 authors = ["harshitbhat"]
 language = "en"
+
+[output.html]
+cname = "dsa.harshitbhat.com"
