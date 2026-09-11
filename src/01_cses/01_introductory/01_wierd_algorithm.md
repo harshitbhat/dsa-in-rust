@@ -33,7 +33,7 @@ This is a direct simulation of the Collatz sequence until the termination condit
 
 #### Core Logic
 
-```rust,no_run
+```rust,ignore
 while n != 1 {
     print!("{n} ");
     if n % 2 == 0 {
@@ -50,4 +50,5 @@ println!("1");
 
 ```rust,editable
 {{#include ../../../solutions/src/cses/01_introductory_problems/01_wierd_algorithm.rs}}
+```
 </details>
