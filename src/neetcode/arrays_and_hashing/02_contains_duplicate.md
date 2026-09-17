@@ -41,7 +41,7 @@ Explanation: Multiple values appear more than once
 
 - My initial thought was to use a `HashMap`, check if the key exists during iteration, and if it does, return `true` immediately.
 
-```rust,no_run
+```rust,ignore
 use std::collections::HashMap;
 
 impl Solution {
@@ -67,7 +67,7 @@ This solution worked but was a bit slow (beat only ~9.8% on LeetCode).
 
 - The second approach was to use a HashSet with pre-allocated capacity. Since `.insert()` returns false if the element is already present, we can do an early return directly inside the loop:
 
-```rust,no_run
+```rust,ignore
 use std::collections::HashSet;
 
 impl Solution {

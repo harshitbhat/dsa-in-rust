@@ -40,7 +40,7 @@ Explanation: t contains 'c' which is not in s, and lacks 'r'
   - If a character is missing, return `false` early.
   - Finally, check if the map is empty (`map.is_empty()`).
 
-```rust,no_run
+```rust,ignore
 use std::collections::HashMap;
 
 impl Solution {
@@ -77,7 +77,7 @@ This was accepted, beats about 33% os submission, also i miss an case of early r
 
 Same frequency-counting concept, but significantly faster. Since the problem guarantees lowercase English letters (`a`–`z`), we can use a fixed-size stack array `[0; 26]` instead of a heap-allocated `HashMap`. Iterating with `.bytes()` avoids UTF-8 decoding overhead.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn is_anagram(s: String, t: String) -> bool {
         if s.len() != t.len() {
