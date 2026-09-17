@@ -34,7 +34,7 @@ Explanation: Direct concatenation of nums with itself
 
 Just initialise a vector of length twice of the given array and then while iterating over the array set the item for the current index `i` and `i + n`.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn get_concatenation(nums: Vec<i32>) -> Vec<i32> {
         let n = nums.len();
