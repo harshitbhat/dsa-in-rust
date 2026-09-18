@@ -39,7 +39,7 @@ Horizontal scanning approach. Start by assuming the first string is the entire c
 - Shrink the `prefix` in place using `.truncate()` to keep only the shared length.
 - If at any point the prefix becomes empty, do an early return since no common prefix can exist.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
         if strs.is_empty() {

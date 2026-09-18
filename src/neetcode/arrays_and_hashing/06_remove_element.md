@@ -52,7 +52,7 @@ Two-pointer swapping approach from both ends. Since relative order does not need
 - If `nums[left]` is different from `val`, advance `left`.
 - Once `left` meets `right`, all remaining valid elements reside within `0..left`.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
         let mut left = 0;

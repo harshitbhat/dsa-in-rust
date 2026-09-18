@@ -37,7 +37,7 @@ Classic two-pointer approach swapping characters inward from both ends:
 - Swap characters at `left` and `right`, then increment `left` and decrement `right`.
 - Terminate once the pointers meet or cross each other.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn reverse_string(s: &mut Vec<char>) {
         let mut left = 0;

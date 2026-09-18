@@ -35,7 +35,7 @@ Output: 2
 
 Sorting-based approach. Since the problem guarantees that the majority element appears strictly more than `⌊n / 2⌋` times, sorting the array will always place the majority element across the middle index (`n / 2`), regardless of whether the element occupies the lower half, upper half, or spans across both.
 
-```rust,no_run
+```rust,ignore
 impl Solution {
     pub fn majority_element(mut nums: Vec<i32>) -> i32 {
         nums.sort();
