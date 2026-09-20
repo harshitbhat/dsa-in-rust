@@ -1,20 +1,52 @@
+# Linked List Cycle
 
+[LeetCode #141](https://leetcode.com/problems/linked-list-cycle/description/)
 
-### Solution:
+---
+
+### Statement
+
+Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer.
+
+Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
+
+**Constraints:**
+- The number of nodes in the list is in the range \\([0, 10^4]\\).
+- \\( -10^5 \le \text{Node.val} \le 10^5 \\)
+- `pos` is `-1` or a valid index in the linked list.
+
+### Examples
+
+**Example 1:**
+```text
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+```
+
+**Example 2:**
+```text
+Input: head = [1,2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+```
+
+**Example 3:**
+```text
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+```
+
+---
+
+### Solution
 
 **This problem is fundamentally incompatible with Rust's ownership model.**
 
-The reason is the `ListNode` definition itself:
-
-```
-// LeetCode's node definition
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>   // ← Box means single owner
-}
-```
-
-`Box<T>` enforces **single ownership** — every node has exactly one owner. A cycle requires a node to be reachable from *two places* (a node pointing back to an earlier node), which means **two owners for the same node**. That's illegal in safe Rust.
+LeetCode's node definition uses `Box<T>`, which enforces single ownership. A cycle requires a node to be reachable from two places simultaneously — two owners of the same node — which is illegal in safe Rust. LeetCode therefore does not offer this problem in Rust.
 
 ```
 3 → 2 → 0 → -4
@@ -22,29 +54,11 @@ pub struct ListNode {
      (tail points back to node 2 — TWO owners of node 2)
 ```
 
-For LeetCode to even *construct* the test input in Rust, they'd need to use either:
-- `Rc<RefCell<ListNode>>` — reference counted, shared ownership
-- `unsafe` raw pointers
+To represent a cycle in Rust you would need `Rc<RefCell<ListNode>>` (reference counted, shared ownership) or `unsafe` raw pointers, neither of which matches LeetCode's simple `Box`-based definition.
 
-Both are complex and not what LeetCode's simple `Box`-based `ListNode` supports. So **LeetCode simply doesn't offer this problem in Rust** because they can't represent the input type safely with their existing node definition.
-
----
-
-**JS Solution**
+**JavaScript solution (Floyd's cycle detection — fast and slow pointers):**
 
 ```js
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
 var hasCycle = function (head) {
   let slow = head;
   let fast = head;
