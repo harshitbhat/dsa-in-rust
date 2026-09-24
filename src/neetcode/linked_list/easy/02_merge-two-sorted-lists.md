@@ -43,7 +43,7 @@ I had the mental framework in mind but couldn't express it in Rust, so I looked 
 
 **The JS → Rust translation, concept by concept:**
 
-```
+```text
 JS                          Rust
 ──────────────────────────────────────────────────────
 new ListNode(-1)            Box::new(ListNode::new(-1))
