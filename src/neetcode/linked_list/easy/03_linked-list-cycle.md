@@ -48,7 +48,7 @@ Explanation: There is no cycle in the linked list.
 
 LeetCode's node definition uses `Box<T>`, which enforces single ownership. A cycle requires a node to be reachable from two places simultaneously — two owners of the same node — which is illegal in safe Rust. LeetCode therefore does not offer this problem in Rust.
 
-```
+```text
 3 → 2 → 0 → -4
         ↑_____↑
      (tail points back to node 2 — TWO owners of node 2)
