@@ -34,3 +34,53 @@ Practice of NeetCode 250 in Rust
 ### Easy
 - [Baseball Game](./stack/easy/01_baseball-game.md)
 - [Valid Parentheses](./stack/easy/02_valid-parentheses.md)
+
+## Binary Search
+
+### Easy
+- [Binary Search](./binary_search/easy/01_binary_search.md)
+- [Search Insert Position](./binary_search/easy/02_search-insert-position.md)
+- [Guess Number Higher or Lower](./binary_search/easy/03_guess-number-higher-or-lower.md)
+- [Sqrt(x)](./binary_search/easy/04_sqrtx.md)
+
+## Linked List
+
+### Easy
+- [Reverse Linked List](./linked_list/easy/01_reverse-linked-list.md)
+- [Merge Two Sorted Lists](./linked_list/easy/02_merge-two-sorted-lists.md)
+- [Linked List Cycle](./linked_list/easy/03_linked-list-cycle.md)
+
+## Backtracking
+
+### Easy
+- [Sum of All Subset XOR Totals](./backtracking/easy/01_sum-of-all-subset-xor-totals.md)
+
+## Graphs
+
+### Easy
+- [Island Perimeter](./graphs/easy/01_island-perimeter.md)
+- [Verifying an Alien Dictionary](./graphs/easy/02_verifying-an-alien-dictionary.md)
+- [Find the Town Judge](./graphs/easy/03_find-the-town-judge.md)
+
+## Heap
+
+### Easy
+- [Kth Largest Element in a Stream](./heap/easy/01_kth-largest-element-in-a-stream.md)
+- [Last Stone Weight](./heap/easy/02_last-stone-weigh.md)
+
+## DP
+
+### Easy
+- [Climbing Stairs](./dp/easy/01_climbing-stairs.md)
+- [Min Cost Climbing Stairs](./dp/easy/02_min-cost-climbing-stairs.md)
+- [N-th Tribonacci Number](./dp/easy/03_n-th-tribonacci-number.md)
+
+## Greedy
+
+### Easy
+- [Lemonade Change](./greedy/easy/01_lemonade-change.md)
+
+## Intervals
+
+### Easy
+- [Meeting Rooms](./intervals/easy/01_meeting-rooms.md)
