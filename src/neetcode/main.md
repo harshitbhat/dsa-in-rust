@@ -13,6 +13,9 @@ Practice of NeetCode 250 in Rust
 - [Remove Element](./arrays_and_hashing/easy/06_remove_element.md)
 - [Majority Element](./arrays_and_hashing/easy/07_majority_element.md)
 
+### Medium
+- [Valid Sudoku](./arrays_and_hashing/medium/01_valid-sudoku.md)
+
 ## Two Pointers
 
 ### Easy
@@ -55,6 +58,10 @@ Practice of NeetCode 250 in Rust
 ### Easy
 - [Sum of All Subset XOR Totals](./backtracking/easy/01_sum-of-all-subset-xor-totals.md)
 
+### Medium
+- [Subsets](./backtracking/medium/01_subsets.md)
+- [Combination Sum](./backtracking/medium/02_combination-sum.md)
+
 ## Graphs
 
 ### Easy
@@ -62,11 +69,19 @@ Practice of NeetCode 250 in Rust
 - [Verifying an Alien Dictionary](./graphs/easy/02_verifying-an-alien-dictionary.md)
 - [Find the Town Judge](./graphs/easy/03_find-the-town-judge.md)
 
+### Medium
+- [Number of Islands](./graphs/medium/01_number-of-islands.md)
+- [Rotting Oranges](./graphs/medium/02_rotten_orange.md)
+- [Course Schedule](./graphs/medium/03_course-schedule.md)
+
 ## Heap
 
 ### Easy
 - [Kth Largest Element in a Stream](./heap/easy/01_kth-largest-element-in-a-stream.md)
 - [Last Stone Weight](./heap/easy/02_last-stone-weigh.md)
+
+### Medium
+- [K Closest Points to Origin](./heap/medium/01_k-closest-points-to-origin.md)
 
 ## DP
 
@@ -84,3 +99,21 @@ Practice of NeetCode 250 in Rust
 
 ### Easy
 - [Meeting Rooms](./intervals/easy/01_meeting-rooms.md)
+
+## Design
+
+### Easy
+- [Design HashSet](./design-todo/easy/01_design-hashset.md)
+- [Design HashMap](./design-todo/easy/02_design-hashmap.md)
+- [Implement Stack Using Queues](./design-todo/easy/03_implement-stack-using-queues.md)
+- [Implement Queue Using Stacks](./design-todo/easy/04_implement-queue-using-stacks.md)
+
+### Medium
+- [Design Circular Queue](./design-todo/medium/01_design-circular-queue.md)
+- [LRU Cache](./design-todo/medium/02_lru-cache.md)
+- [Implement Trie (Prefix Tree)](./design-todo/medium/02_implement-trie-prefix-tree.md)
+- [Design Twitter](./design-todo/medium/03_design-twitter.md)
+- [Implement Trie (Prefix Tree) II](./design-todo/medium/04_implement-trie-prefix-tree.md)
+
+### Hard
+- [LFU Cache](./design-todo/hard/01_lfu-cache.md)
