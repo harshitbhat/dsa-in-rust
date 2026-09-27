@@ -4,6 +4,10 @@
 
 - [Theory]()
 - [Practice]()
+    - [Study Plan]()
+        - [Graph Theory]()
+            - [Standard Traversal]()
+                - [Number of Provinces](./leetcode/study-plan/graph-theory/01_standard_traversal/01_number_of_provinces.md)
     - [NeetCode](./leetcode/neetcode/main.md)
         - [Arrays & Hashing]()
             - [Easy]()
