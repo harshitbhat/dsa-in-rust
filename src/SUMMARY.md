@@ -4,6 +4,7 @@
 
 - [Theory]()
 - [Practice]()
+    - [IO in Rust](./io.md)
    <!--  - [Study Plan]()
         - [Graph Theory]()
             - [Standard Traversal]()
