@@ -4,11 +4,11 @@
 
 - [Theory]()
 - [Practice]()
-    - [Study Plan]()
+   <!--  - [Study Plan]()
         - [Graph Theory]()
             - [Standard Traversal]()
-                - [Number of Provinces](./leetcode/study-plan/graph-theory/01_standard_traversal/01_number_of_provinces.md)
-    - [NeetCode](./leetcode/neetcode/main.md)
+                - [Number of Provinces](./leetcode/study-plan/graph-theory/01_standard_traversal/01_number_of_provinces.md) -->
+    <!-- - [NeetCode](./leetcode/neetcode/main.md)
         - [Arrays & Hashing]()
             - [Easy]()
                 - [Concatenation of Array](./leetcode/neetcode/arrays_and_hashing/easy/01_concatenation_of_array.md)
@@ -92,7 +92,7 @@
                 - [Design Twitter](./leetcode/neetcode/design-todo/medium/03_design-twitter.md)
                 - [Implement Trie (Prefix Tree) II](./leetcode/neetcode/design-todo/medium/04_implement-trie-prefix-tree.md)
             - [Hard]()
-                - [LFU Cache](./leetcode/neetcode/design-todo/hard/01_lfu-cache.md)
-    - [CSES](./cses/main.md)
+                - [LFU Cache](./leetcode/neetcode/design-todo/hard/01_lfu-cache.md) -->
+    <!-- - [CSES](./cses/main.md)
         - [Introductory Problems]()
-            - [Weird Algorithm](cses/01_introductory/01_wierd_algorithm.md)
+            - [Weird Algorithm](cses/01_introductory/01_wierd_algorithm.md) -->
